@@ -28,10 +28,10 @@ func (t SimpleTask) Execute() {
 }
 
 func ExampleSimple() {
-    // Create a queue with 10 workers
+    // Create a queue with 2 workers
     q := taskq.New(taskq.Workers(2))
 
-    // Submit tasks for execution.
+    // Submit 5 tasks for execution.
     for i := 0; i < 5; i++ {
         task := SimpleTask(i)
         q.Submit(task)
@@ -50,7 +50,7 @@ func ExampleSimple() {
 }
 ```
 
-You can find a complete example in the documentation.
+In the documentation you can find a complete [executable example](https://godoc.org/github.com/airnandez/taskq#pkg-examples).
 
 ## Installation
 You need to have installed the [Go programming environment](https://golang.org) and then do:
