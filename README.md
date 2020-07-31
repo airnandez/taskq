@@ -2,7 +2,7 @@
 [![GoDoc](https://godoc.org/github.com/airnandez/taskq?status.svg)](https://godoc.org/github.com/airnandez/taskq)
 
 ## Overview
-`taskq` is a intentionally thin layer on top of the standard library for enqueueing and executing tasks asynchronously and concurrently.
+`taskq` is an intentionally thin layer on top of the standard library for enqueueing and executing tasks asynchronously and concurrently.
 Internally, a `taskq` owns a set of worker goroutines which each executes one task at a time.
 
 ## How to use
